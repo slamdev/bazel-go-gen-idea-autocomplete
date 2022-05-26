@@ -24,7 +24,7 @@ jobs:
           java-version: ${{ matrix.java }}
       # uncomment to have docker daemon
       # - uses: docker-practice/actions-setup-docker@v1
-      - uses: bazelbuild/setup-bazelisk@v1
+      - uses: bazelbuild/setup-bazelisk@v2
       - uses: actions/cache@v2
         with:
           path: "~/.cache/bazel"
